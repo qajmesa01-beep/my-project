@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="calcu.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <p>Enter height and weight to calculate BMI.</p>
+        
+        <label for="height">Height (cm)</label>
+        <input type="number" id="height" placeholder="170" min="1">
+        
+        <label for="weight">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="70" min="1">
+        
+        <button id="calculateBtn">Calculate</button>
+        <button id="resetBtn">Reset</button>
+        
+        <h2 id="result">Result here</h2>
+        
+        <p class="note">BMI is a simple estimate. Consult a doctor for advice.</p>
+        
+        <details class="bmi-info">
+            <summary>What are the best BMI ranges?</summary>
+            <p>BMI (Body Mass Index) indicates weight status based on height. The "best" or ideal BMI for health is generally 18.5–24.9 (Normal). Here's a breakdown:</p>
+            <ul>
+                <li><strong>Under 18.5 (Underweight):</strong> May indicate malnutrition or low body weight. Aim to gain weight through balanced nutrition.</li>
+                <li><strong>18.5–24.9 (Normal):</strong> Ideal range for most adults. Maintain with healthy eating and exercise.</li>
+                <li><strong>25–29.9 (Overweight):</strong> Higher risk of health issues. Focus on gradual weight loss.</li>
+                <li><strong>30+ (Obese):</strong> Increased risk of diseases. Seek medical guidance for weight management.</li>
+            </ul>
+            <p>Note: BMI doesn't account for muscle mass, age, or gender. For personalized advice, consult a healthcare professional.</p>
+        </details>
+    </div>
+    <script src="calcu.js"></script>
+</body>
+</html>
